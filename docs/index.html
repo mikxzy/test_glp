@@ -20,42 +20,61 @@
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            text-align: center;
+        h1, h2, h3 {
+            text-align: left;
             color: #1a73e8;
         }
-        .login-section, .content-section {
+        .section {
             margin-bottom: 30px;
         }
-        .login-section label {
+        .button {
             display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        .login-section input {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .login-section button {
             width: 100%;
             padding: 10px;
             background-color: #1a73e8;
             color: white;
-            border: none;
+            text-align: center;
+            text-decoration: none;
             border-radius: 5px;
-            cursor: pointer;
+            margin-top: 10px;
         }
-        .login-section button:hover {
+        .button:hover {
             background-color: #1666c1;
+        }
+        ul li {
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>minvikt.se - Medicinsk viktnedgång</h1>
+        <h1>minvikt.se - Medicinsk viktnedgång för alla!</h1>
+
+        <div class="section">
+            <h2>Vi behandlar dig som på grund av övervikt upplever ett nedsatt välbefinnande.</h2>
+            <p>Hos oss behöver du inte ha fetma för att få medicinsk behandling, till skillnad från andra digitala kliniker.</p>
+        </div>
+
+        <div class="section">
+            <h2>Varför välja minvikt.se?</h2>
+            <ul>
+                <li>Enkel handläggning och uppföljning.</li>
+                <li>Följ dina framsteg direkt i appen med viktkurvor.</li>
+                <li>Ingen provtagning krävs.</li>
+                <li>Inga integritetskränkande bilder.</li>
+                <li>Du binder dig endast tre månader åt gången.</li>
+                <li>Smidig betalning via Swish, månadsvis.</li>
+                <li>Lägst pris – inga dietister eller tränare.</li>
+                <li>Möjlighet till hemleverans av medicin.</li>
+            </ul>
+            <p>Om du är överviktig och funderat på denna typ av behandling men tyckt att kraven varit för höga, är du varmt välkommen att skapa konto hos oss med BankID.</p>
+        </div>
+
+        <div class="section">
+            <h2>Användarvillkor</h2>
+            <p>Jag lämnar härmed mitt samtycke till att minvikt.se får ta del av min medicinlista.</p>
+            <a href="#" class="button">Logga in med BankID</a>
+            <a href="#" class="button">Logga in med annan enhet</a>
 
         <div class="login-section">
             <h2>Logga in</h2>
@@ -69,22 +88,31 @@
                 <button type="submit">Logga in</button>
             </form>
         </div>
+        </div>
 
-        <div class="content-section">
+        <div class="section">
+            <h2>Vilka är vi som driver minvikt.se?</h2>
+            <p>Philip Segenmark och Mike Zyto, leg. läkare, med lång erfarenhet av digital sjukvård. Grundare till tjänster som Potensoo.se, Medicoo.se och MinDoktor.se.</p>
+            <p>minvikt.se är en registrerad vårdgivare hos IVO genom GLPX AB.</p>
+        </div>
+
+        <div class="section">
             <h2>Vanliga frågor</h2>
             <h3>Varför ingen provtagning eller bilder?</h3>
-            <p>Prover är oftast onödiga och fyller ingen funktion i detta sammanhang vid behandling med GLP-1-medicin. Vi strävar efter att göra behandlingen så enkel och tillgänglig som möjligt.</p>
-            <p>Bilder som begärs av andra kliniker kan uppfattas som kränkande. Hos oss behöver du aldrig visa upp dig halvklädd, och vi kräver inga sådana bilder. Skulle en bild vara nödvändig i undantagsfall sparas den i din journal enligt lagstadgade krav, och kan inte raderas utan Socialstyrelsens medgivande.</p>
+            <p>Det är onödigt med provtagning eftersom det inte fyller någon funktion i detta sammanhang vid behandling med GLP-1-medicin.
+            Många kliniker begär bilder, men vi anser att detta kan upplevas som integritetskränkande. På minvikt.se slipper du visa upp dig halvnaken.
+            Dessutom sparas dessa bilder i journalen och kan inte raderas utan Socialstyrelsens godkännande, även om du avslutar ditt abonnemang.</p>
 
-            <h3>Hur gör ni istället för att veta om jag är lämplig för behandlingen?</h3>
-            <p>Vi kontrollerar ditt hälsotillstånd genom att titta på dina pågående medicinska behandlingar. Om läkaren bedömer att en viss medicin är olämplig att kombinera med GLP-1 får du besked om detta. Dessutom får du svara på frågor om din hälsa för att säkerställa att behandlingen passar dig.</p>
+            <h3>Hur avgör vi om du är lämplig för behandling?</h3>
+            <p>Vi granskar ditt hälsotillstånd, inklusive din aktuella medicinering. Om läkaren bedömer att en behandling är olämplig i kombination med din nuvarande medicinering får du besked om detta.
+            Du kommer också att få svara på en rad hälsorelaterade frågor som hjälper oss att skräddarsy din behandling.</p>
 
-            <h3>Varför har ni inga dietister och personliga tränare?</h3>
-            <p>Vi fokuserar på att ge medicinsk behandling som är enkel att följa. För många är dieter och träning svårt att hinna med i vardagen, och vi ser till att behandlingen fungerar utan dessa krav. De råd som vissa kliniker ger om kost och träning kan ofta hittas gratis via verktyg som ChatGPT.</p>
+            <h3>Varför har vi inga dietister eller personliga tränare?</h3>
+            <p>De som klarar av dieter och träning hanterar ofta detta på egen hand. Många tycker dock att det är svårt att hinna med i vardagen. De råd som vissa kliniker ger om kost och träning skapas ofta av AI-verktyg som ChatGPT – och kan därför enkelt nås utan extra kostnad.</p>
 
-            <h3>Hur får jag veta om min motivation?</h3>
-            <p>På dina personliga sidor i vår app kan du följa dina framsteg i tabeller och grafer. Där kan du rapportera in din vikt och dina mått regelbundet. Om du avviker från förväntad viktnedgång kontaktar vi dig för att säkerställa att behandlingen fungerar som den ska.</p>
-        </div>
+            <h3>Hur får jag koll på min motivation?</h3>
+            <p>II vår app har du tillgång till personliga sidor med tabeller och grafer som visar din viktutveckling. Du kan enkelt rapportera in vikt och mått. Om vi ser avvikelser från den förväntade viktnedgången kontaktar vi dig för att hjälpa dig vidare.
+</div>
     </div>
 </body>
 </html>
