@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minvikt.se - Medicinsk viktnedgång</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('bakgrund.png') center/cover no-repeat;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #1a73e8;
+        }
+        .login-section, .content-section {
+            margin-bottom: 30px;
+        }
+        .login-section label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .login-section input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-section button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-section button:hover {
+            background-color: #1666c1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>minvikt.se - Medicinsk viktnedgång</h1>
+
+        <div class="login-section">
+            <h2>Logga in</h2>
+            <form>
+                <label for="email">E-postadress</label>
+                <input type="email" id="email" name="email" placeholder="Ange din e-postadress" required>
+
+                <label for="password">Lösenord</label>
+                <input type="password" id="password" name="password" placeholder="Ange ditt lösenord" required>
+
+                <button type="submit">Logga in</button>
+            </form>
+        </div>
+
+        <div class="content-section">
+            <h2>Vanliga frågor</h2>
+            <h3>Varför ingen provtagning eller bilder?</h3>
+            <p>Prover är oftast onödiga och fyller ingen funktion i detta sammanhang vid behandling med GLP-1-medicin. Vi strävar efter att göra behandlingen så enkel och tillgänglig som möjligt.</p>
+            <p>Bilder som begärs av andra kliniker kan uppfattas som kränkande. Hos oss behöver du aldrig visa upp dig halvklädd, och vi kräver inga sådana bilder. Skulle en bild vara nödvändig i undantagsfall sparas den i din journal enligt lagstadgade krav, och kan inte raderas utan Socialstyrelsens medgivande.</p>
+
+            <h3>Hur gör ni istället för att veta om jag är lämplig för behandlingen?</h3>
+            <p>Vi kontrollerar ditt hälsotillstånd genom att titta på dina pågående medicinska behandlingar. Om läkaren bedömer att en viss medicin är olämplig att kombinera med GLP-1 får du besked om detta. Dessutom får du svara på frågor om din hälsa för att säkerställa att behandlingen passar dig.</p>
+
+            <h3>Varför har ni inga dietister och personliga tränare?</h3>
+            <p>Vi fokuserar på att ge medicinsk behandling som är enkel att följa. För många är dieter och träning svårt att hinna med i vardagen, och vi ser till att behandlingen fungerar utan dessa krav. De råd som vissa kliniker ger om kost och träning kan ofta hittas gratis via verktyg som ChatGPT.</p>
+
+            <h3>Hur får jag veta om min motivation?</h3>
+            <p>På dina personliga sidor i vår app kan du följa dina framsteg i tabeller och grafer. Där kan du rapportera in din vikt och dina mått regelbundet. Om du avviker från förväntad viktnedgång kontaktar vi dig för att säkerställa att behandlingen fungerar som den ska.</p>
+        </div>
+    </div>
+</body>
+</html>
