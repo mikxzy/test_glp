@@ -3,75 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>minvikt.se - Medicinsk viktnedgång</title>
+    <title>MinVikt.se - Medicinsk viktnedgång för alla</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: url('images/bakgrund.png') repeat;
-
-            color: #333;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
         }
-        .container {
+        header {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        main {
             max-width: 800px;
-            margin: 50px auto;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        h1, h2, h3 {
-            text-align: left;
-            color: #1a73e8;
+        h2 {
+            color: #0056b3;
+            margin-bottom: 0.5rem;
+        }
+        h3.highlight {
+            color: #0056b3;
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #f1f1f1;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border-radius: 5px;
         }
         .section {
-            margin-bottom: 30px;
+            margin-bottom: 2rem;
         }
         .button {
             display: block;
-            width: 100%;
-            padding: 10px;
-            background-color: #1a73e8;
+            background-color: #0056b3;
             color: white;
             text-align: center;
-            text-decoration: none;
+            padding: 0.5rem;
             border-radius: 5px;
-            margin-top: 10px;
+            text-decoration: none;
+            margin: 1rem 0;
         }
         .button:hover {
-            background-color: #1666c1;
+            background-color: #003d80;
         }
-        ul li {
-            font-weight: bold;
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #f1f1f1;
+            margin-top: 2rem;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div style="display: flex; align-items: center;">
-            <img src="images/timglas.png" alt="Logotyp" style="height: 50px; margin-right: 10px;">
-            <h1>MinVikt.se - Medicinsk viktnedgång för alla!</h1>
-        </div>
-
+    <header>
+        <h1>MinVikt.se - Medicinsk viktnedgång för alla</h1>
+    </header>
+    <main>
         <div class="section">
-            <h2>Vi behandlar dig som på grund av övervikt upplever ett nedsatt välbefinnande.</h2>
-            <p>Hos oss behöver du inte ha fetma för att få medicinsk behandling, till skillnad från andra digitala kliniker.</p>
+            <h2>Vi behandlar dig</h2>
+            <p>Vi behandlar dig som på grund av övervikt upplever ett nedsatt välbefinnande. Hos oss behöver du inte ha fetma för att få medicinsk behandling, till skillnad från andra digitala kliniker.</p>
         </div>
 
         <div class="section">
             <h2>Varför välja minvikt.se?</h2>
+            <h3 class="highlight">Ingen provtagning krävs</h3>
+            <p>Du behöver inte genomgå några provtagningar för att starta din behandling hos oss.</p>
+            <h3 class="highlight">Inga integritetskränkande bilder</h3>
+            <p>Vi kräver aldrig att du ska skicka in bilder som kan upplevas som kränkande.</p>
+        </div>
+
+        <div class="section">
+            <h2>Andra fördelar</h2>
             <ul>
                 <li>Enkel handläggning och uppföljning.</li>
                 <li>Följ dina framsteg direkt i appen med viktkurvor.</li>
-                <li>Ingen provtagning krävs.</li>
-                <li>Inga integritetskränkande bilder.</li>
                 <li>Du binder dig endast tre månader åt gången.</li>
                 <li>Smidig betalning via Swish, månadsvis.</li>
                 <li>Lägst pris – inga dietister eller tränare.</li>
                 <li>Möjlighet till hemleverans av medicin.</li>
             </ul>
-            <p>Om du är överviktig och funderat på denna typ av behandling men tyckt att kraven varit för höga, är du varmt välkommen att skapa konto hos oss med BankID.</p>
         </div>
 
         <div class="section">
@@ -79,44 +109,30 @@
             <p>Jag lämnar härmed mitt samtycke till att minvikt.se får ta del av min medicinlista.</p>
             <a href="#" class="button">Logga in med BankID</a>
             <a href="#" class="button">Logga in med annan enhet</a>
-
-        <div class="login-section">
-            <h2>Logga in</h2>
-            <form>
-                <label for="email">E-postadress</label>
-                <input type="email" id="email" name="email" placeholder="Ange din e-postadress" required>
-
-                <label for="password">Lösenord</label>
-                <input type="password" id="password" name="password" placeholder="Ange ditt lösenord" required>
-
-                <button type="submit">Logga in</button>
-            </form>
-        </div>
         </div>
 
         <div class="section">
             <h2>Vilka är vi som driver minvikt.se?</h2>
-            <p>Philip Segenmark och Mike Zyto, leg. läkare, med lång erfarenhet av digital sjukvård. Grundare till tjänster som Potensoo.se, Medicoo.se och MinDoktor.se.</p>
-            <p>minvikt.se är en registrerad vårdgivare hos IVO genom GLPX AB.</p>
+            <p>Philip Segenmark och Mike Zyto, leg. läkare, med lång erfarenhet av digital sjukvård. Grundare till tjänster som Potensoo.se, Medicoo.se och MinDoktor.se. minvikt.se är en registrerad vårdgivare hos IVO genom GLPX AB.</p>
         </div>
 
         <div class="section">
             <h2>Vanliga frågor</h2>
             <h3>Varför ingen provtagning eller bilder?</h3>
-            <p>Det är onödigt med provtagning eftersom det inte fyller någon funktion i detta sammanhang vid behandling med GLP-1-medicin.
-            Många kliniker begär bilder, men vi anser att detta kan upplevas som integritetskränkande. På minvikt.se slipper du visa upp dig halvnaken.
-            Dessutom sparas dessa bilder i journalen och kan inte raderas utan Socialstyrelsens godkännande, även om du avslutar ditt abonnemang.</p>
+            <p>Det är onödigt med provtagning eftersom det inte fyller någon funktion i detta sammanhang vid behandling med GLP-1-medicin. Många kliniker begär bilder, men vi anser att detta kan upplevas som integritetskränkande. På minvikt.se slipper du visa upp dig halvnaken. Dessutom sparas dessa bilder i journalen och kan inte raderas utan Socialstyrelsens godkännande, även om du avslutar ditt abonnemang.</p>
 
             <h3>Hur avgör vi om du är lämplig för behandling?</h3>
-            <p>Vi granskar ditt hälsotillstånd, inklusive din aktuella medicinering. Om läkaren bedömer att en behandling är olämplig i kombination med din nuvarande medicinering får du besked om detta.
-            Du kommer också att få svara på en rad hälsorelaterade frågor som hjälper oss att skräddarsy din behandling.</p>
+            <p>Vi granskar ditt hälsotillstånd, inklusive din aktuella medicinering. Om läkaren bedömer att en behandling är olämplig i kombination med din nuvarande medicinering får du besked om detta. Du kommer också att få svara på en rad hälsorelaterade frågor som hjälper oss att skräddarsy din behandling.</p>
 
             <h3>Varför har vi inga dietister eller personliga tränare?</h3>
             <p>De som klarar av dieter och träning hanterar ofta detta på egen hand. Många tycker dock att det är svårt att hinna med i vardagen. De råd som vissa kliniker ger om kost och träning skapas ofta av AI-verktyg som ChatGPT – och kan därför enkelt nås utan extra kostnad.</p>
 
             <h3>Hur får jag koll på min motivation?</h3>
-            <p>II vår app har du tillgång till personliga sidor med tabeller och grafer som visar din viktutveckling. Du kan enkelt rapportera in vikt och mått. Om vi ser avvikelser från den förväntade viktnedgången kontaktar vi dig för att hjälpa dig vidare.
-</div>
-    </div>
+            <p>I vår app har du tillgång till personliga sidor med tabeller och grafer som visar din viktutveckling. Du kan enkelt rapportera in vikt och mått. Om vi ser avvikelser från den förväntade viktnedgången kontaktar vi dig för att hjälpa dig vidare.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 MinVikt.se - Alla rättigheter förbehållna.</p>
+    </footer>
 </body>
 </html>
